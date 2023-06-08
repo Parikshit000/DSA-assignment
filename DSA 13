@@ -1,0 +1,20 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+
+int main()
+{
+    int DOB;
+    int *ptr =&DOB;
+    printf("enter your DOB : \n");
+    scanf("%d",&DOB);
+
+    printf("Value you enter in DOB is : %d \n",DOB);
+    printf("Memory address of DOB variable is : %d \n",&DOB);
+    printf("Memory address of DOB with the pointer is : %d \n",ptr);
+    printf("Value of a DOB with the pointer is : %d \n", *ptr);
+
+
+    return 0;
+}
