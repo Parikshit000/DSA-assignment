@@ -1,0 +1,34 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+
+struct std_data
+{
+    char name;
+    int roll_no ;
+    int cont_no ;
+};
+
+int main()
+{
+    int a;
+    struct std_data s_info[15];
+
+    printf("Data of a students :");
+    for ( a = 0; a < 15; a++)
+    {
+        printf(" \n Enter the data of a student : \n");
+        scanf("%c \n %d \n %d",&s_info[a].name, &s_info[a].roll_no ,&s_info[a].cont_no);
+    }
+
+    printf("Check the data of you enterd : \n");
+    for (a = 0; a < 15; a++)
+    {
+        printf("Name of the student is :         %c",s_info[a].name);
+        printf("Roll no. of a student  is :      %d",s_info[a].roll_no);
+        printf("Contact no. of a student  is :   %d",s_info[a].cont_no);
+    }
+    return 0;
+
+}
