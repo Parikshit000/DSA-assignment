@@ -1,0 +1,56 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+
+struct lib_books
+{
+    char   book_name;
+    char   book_auth ;
+    int    book_series;
+    int    book_no;
+    float  book_price;
+};
+
+int main ()
+{
+    int i;
+    char choice,ch;
+    struct lib_books b_info[5];
+
+    printf("Enter the details of books : \n");
+    for ( i = 0; i < 5; i++)
+    {
+        printf("Enter the name of book : ");
+        scanf("%c",&b_info[i].book_name);
+        printf("Enter the name of author of book : ");
+        scanf("%c",&b_info[i].book_auth);
+        printf("Enter the series of book : ");
+        scanf("%d",&b_info[i].book_series);
+        printf("Enter the number of book : ");
+        scanf("%d",&b_info[i].book_no);
+        printf("Enter the price of book : ");
+        scanf("%f",&b_info[i].book_price);
+    }
+    
+    printf("Do you want to check the details of a book y(1)/n(0) :");
+    scanf("%c",&choice);
+    if (choice == 1 )
+    {
+        for ( i = 0; i < 5; i++)
+        {
+            printf(" %d => Name of book is :    %c \n",i,b_info[i].book_name);
+            printf(" %d => Authour of book is : %c \n",i,b_info[i].book_auth);
+            printf(" %d => Series of book is :  %c \n",i,b_info[i].book_series);
+            printf(" %d => Number of book is :  %c \n",i,b_info[i].book_no);
+            printf(" %d => Price of book is :   %c \n",i,b_info[i].book_price);
+        }
+        
+    }
+    else
+    {
+        printf("\t\tThankyou...");
+    }
+    
+    return 0;
+}
