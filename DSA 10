@@ -1,0 +1,31 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+
+struct std_data
+{
+    char name;
+    int roll_no ;
+
+}s1,s2;
+
+int main()
+{
+    printf("Enter the name of 1st student : \n");
+    scanf("%c\n",&s1.name);
+    printf("Enter the roll no 1st student : \n");
+    scanf("%d",&s1.roll_no);
+    printf("Enter the name of 2nd student : \n");
+    scanf("%c\n",&s2.name);
+    printf("Enter the roll no 2nd student : \n");
+    scanf("%d",&s2.roll_no);
+
+
+    printf("Details of all students are : \n");
+    printf("Student 1st : %c     rollno. : %d \n",s1.name,s1.roll_no);
+    printf("Student 2nd : %c     rollno. : %d \n",s2.name,s2.roll_no);
+    
+    return 0;
+
+}
