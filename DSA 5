@@ -1,0 +1,27 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+ int main()
+ {
+    int ko[3][3],i,j;
+    printf("Enter the element of a matrix : \n");
+    for ( i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf("%d, \t",&ko[i][j]); 
+        }    
+    }
+    printf("Check the element you entered in the matrix : \n");
+    for ( i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d ",ko[i][j]); 
+        }    
+        printf("\n");
+    }
+    
+    return 0;
+ }
