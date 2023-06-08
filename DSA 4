@@ -1,0 +1,33 @@
+//Name : parikshit sonti
+//Roll_no.: 22100BTCSICS11196      Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int arr[5],i,j;
+
+    printf("Enter the element of an array: \n");
+
+    for ( i = 0; i < 5; i++)
+    {
+        scanf("%d \n",&arr[i]);
+    }
+
+    printf("The elements which are same : \n");
+
+    for ( i = 0; i < 5; i++)
+    {
+        for ( j = 0; j < 5 ;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+                printf("%d \n",arr[j]);
+            }
+        }
+    }
+    getch();
+    return 0; 
+    
+}
