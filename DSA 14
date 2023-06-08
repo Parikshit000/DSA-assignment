@@ -1,0 +1,19 @@
+//Name : parikshit sonti 
+//Roll_no. : 22100BTCSICS11196         Sec. : ICS(C.S.)-'N'
+
+#include<stdio.h>
+
+int main ()
+{
+    int a;
+    int *ptr ;
+
+    printf("Enter the value of a pointer : ");
+    scanf("%d \n",&a);
+    *ptr=&a;
+    printf("Address of a pointer is %d \n",*ptr);
+    *ptr++;
+
+    printf("Address of a pointer after increment is %d ",ptr);
+    return 0;
+}
